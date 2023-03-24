@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Therese Kay">
+    <meta keywords="Therese, Kay, web, dev, html, css, javascript, portfolio">
+    <meta name="description" content="This page is a portfolio site for Stack Educations Intro to Web Dev class.">
+    <title>Therese Kay</title>
+</head>
+<body>
+    <div name="navigation">
+        <nav>
+            <a href="/portfolio-site/index.html">Home</a>
+            <a href="./about-me.html">About Me</a>
+            <a href="./services.html">Services</a>
+            <a href="./contact.html">Contact Me</a>
+        </nav>
+    </div>
+    <div name="header">
+        <h1>Contact Me</h1>
+    </div>
+    <div name="the form section">
+        <form action="api/SubmitMessage" method="POST">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="service">Desired Service</label>
+                <select id="service" name="service">
+                    <option value="graphic">Graphic Design</option>
+                    <option value="web">Web Design</option>
+                    <option value="Book">Book Layout</option>
+                    <option value="editing">Editing</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+
+        </form>
+
+
+
+    </div>
+    <div>
+        <footer>
+            <p>©Copyright 2023 Therese Kay. All rights reversed.</p>
+          </footer>
+    </div>
+</body>
+</html>
