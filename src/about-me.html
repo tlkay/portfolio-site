@@ -9,7 +9,7 @@
     <title>Therese Kay</title>
 </head>
 <body>
-        <div name="header">
+        <div class="header">
         <nav>
             <a href="../index.html">Home</a>
             <a href="./about-me.html">About Me</a>
@@ -18,30 +18,46 @@
             <a href="./contact.html">Contact Me</a>
         </nav>
     </div>
-    <div name="header">
+    <div name="title">
         <h1>About Me</h1>
     </div>
     <div name="text about me">
         <h2>Specializing in Documentation // Training // Writing </h2>
-           <p>Therese is a seasoned professional with more than 15 years experience in documentation, writing, and training informed by strong knowledge of adult learning theory.<br>
+            <p>Therese is a seasoned professional with more than 15 years experience in documentation, writing, and training informed by strong knowledge of adult learning theory.<br>
                 You can learn more about her professional skills on her <a href="https://www.linkedin.com/in/theresekay/">Linked In page</a>.
                 <br>
                 Therese is also an author and photographer and owns <a href="https://www.theresekay.com">Therese Kay Creative</a>.</p>
             
-            <img src="images/Therese-Kay-Headshot-1.jpg" height="368" width="288" alt="image of Therese Kay smiling">
+            <img id="left" src="images/Therese-Kay-Headshot-1.jpg" height="200" width="142" alt="image of Therese Kay smiling">
 
+            <h2>Learn even more about me!</h2>
+                <div>
+                <p>Choose an option</p>
+                <select id="more" onchange="displayMore()">
+                    <option value=""></option>
+                    <option value="training">Training</option>
+                    <option value="tw">Technical Writing</option>
+                    <option value="cw">Creative Writing</option>
+                    <option value="photography">Photography</option>
+                    <option value="stuff">Random Facts</option>
+                </select>                   
+            <div>
+                <h3>Here is more info about Therese: </h3><span class="more"></span>
+                <p id="morestuff"></p>
+            </div>
     </div>
     <div>
-        <footer>
-            <p>©Copyright 2023 Therese Kay. All rights reserved.</p>
+        <footer class="fixed">
+            <p class="ft">©Copyright 2023 Therese Kay. All rights reserved.</p>
             <div class="inline-block">
-                <p>Follow me on Facebook!
-                    <a href="https://www.facebook.com/ThereseKayCreative/">
-                        <img id="facebook-icon" src="images/icons8-facebook-50.png" height="30" width="30" alt="facebook">
+                <p class="ft">Connect with me on LinkedIn!
+                    <a href="https://www.linkedin.com/in/theresekay/">
+                        <img id="li-icon" src="../src/images/linkedin-logo.png" height="30" width="30" alt="facebook">
                     </a>
                 </p>
             </div>
         </footer>
     </div>
 </body>
+<script src="../script.js"></script>
 </html>

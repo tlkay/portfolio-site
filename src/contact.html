@@ -9,7 +9,7 @@
     <title>Therese Kay</title>
 </head>
 <body>
-    <div name="header">
+    <div class="header">
         <nav>
             <a href="../index.html">Home</a>
             <a href="./about-me.html">About Me</a>
@@ -18,7 +18,7 @@
             <a href="./contact.html">Contact Me</a>
         </nav>
     </div>
-    <div name="header">
+    <div name="title">
         <h1>Contact Me</h1>
     </div>
     <div class="form section">
@@ -44,22 +44,26 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4"></textarea>
             </div>
-            <button type="submit">Submit</button>
-
+            <button type="submit" onclick="displayThanks()" >Submit</button>
         </form>
-
     </div>
     <div>
-        <footer>
-            <p>©Copyright 2023 Therese Kay. All rights reserved.</p>
+        <p class="reply">
+            <!-- display the text from displayThanks() -->
+        </p>
+    </div>
+    <div>
+        <footer class="fixed">
+            <p class="ft">©Copyright 2023 Therese Kay. All rights reserved.</p>
             <div class="inline-block">
-                <p>Follow me on Facebook!
-                    <a href="https://www.facebook.com/ThereseKayCreative/">
-                        <img id="facebook-icon" src="images/icons8-facebook-50.png" height="30" width="30" alt="facebook">
+                <p>Connect with me on LinkedIn!
+                    <a href="https://www.linkedin.com/in/theresekay/">
+                        <img id="li-icon" src="../src/images/linkedin-logo.png" height="30" width="30" alt="facebook">
                     </a>
-                </p>
+                </p class="ft">
             </div>
         </footer>
     </div>
 </body>
+<script src="../script.js"></script>
 </html>
