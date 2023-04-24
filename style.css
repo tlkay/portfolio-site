@@ -41,8 +41,10 @@ p {
 }
 .ft {
         margin-left: 25px;
+        margin-bottom: 8px;
+        margin-top: 8px;
         font-family: calibri;
-        font-size: 14pt;
+        font-size: 12pt;
 }
 a:link {
     color: white

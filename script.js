@@ -1,3 +1,4 @@
+//about me page
 function displayMore() {
     let moreEl = document.getElementById("more")
     let moreSelected = moreEl.options[moreEl.selectedIndex].value
@@ -24,6 +25,8 @@ function getMoreStuff(moreSelected) {
         }
     }
 
+//contact me page
+
 function displayThanks(){
-    document.write("Thank you for your message. I will get back to you within 3 business days.")
+    alert("Thank you for your message. I will get back to you within 3 business days.")
 }
