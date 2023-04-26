@@ -55,7 +55,7 @@ a:hover {
 a:visited {
     color:cornflowerblue;
 }
-form {
+.contact_form {
     padding: 10px;
     background: rgb(222, 222, 253);
     border: 3px solid #0c0c0c;
@@ -76,6 +76,7 @@ button {
     color: white;
     font-size: 14px;
     padding: 3px;
+    cursor: pointer;
 }
 .grid-container {
     display: grid;

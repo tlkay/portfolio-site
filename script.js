@@ -27,6 +27,21 @@ function getMoreStuff(moreSelected) {
 
 //contact me page
 
-function displayThanks(){
-    alert("Thank you for your message. I will get back to you within 3 business days.")
+function sendEmail(){
+    sendEmail.send({
+        Host:"smtp.gmail.com",
+        // Username: "therese.kay@gmail.com",
+        // Password: "N0urishM3now!",
+        // To: "therese.kay@gmail.com",
+        From: document.getElementById("email").value,
+        Subject: "New Inquiry: " + document.getElementById("service"),
+        Body: "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Message: " + document.getElementById("message").value,
+
+    }).then(
+        message => alert("Thank you for your message. I will get back to you within 3 business days.")
+    );
 }
+emailjs.init('service_uwsmp8v');
+emailjs.sendForm('contact_service', 'contact_form', this)
